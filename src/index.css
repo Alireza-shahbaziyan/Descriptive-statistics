@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Paykan";
+  src: url("/public/fonts/woff/Paykan-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Paykan";
+  src: url("/public/fonts/woff/Paykan-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Paykan";
+  src: url("/public/fonts/woff/Paykan-Light.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Paykan";
+  src: url("/public/fonts/woff/Paykan-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+

@@ -7,8 +7,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Vazirmatn", "ui-sans-serif", "system-ui"],
-      },
+        sans: ["Paykan", "system-ui"],
+      }
+      
     },
   },
   plugins: [],
