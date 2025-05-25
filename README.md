@@ -56,5 +56,6 @@
 
 ## 🔗 انتشار
 
-اپلیکیشن به‌صورت رایگان روی Vercel قابل دسترسی است.
+اپلیکیشن به‌صورت رایگان روی Vercel and github قابل دسترسی است.
 
+- [Github Alireza shahbaziyan](https://github.com/Alireza-shahbaziyan/Descriptive-statistics)
