@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <div dir="rtl">
+    <>
       <Router>
         <motion.nav
           initial={{ opacity: 0, y: -20 }}
@@ -32,6 +32,6 @@ export default function App() {
       >
         <Footer />
       </motion.footer>
-    </div>
+    </>
   );
 }

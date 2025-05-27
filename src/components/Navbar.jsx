@@ -2,9 +2,9 @@ import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <nav dir="rtl" className="bg-gray-800 text-white px-6 py-4 flex justify-between items-center">
-      <NavLink to='/' className="text-xl font-bold">آموزش آمار توصیفی</NavLink>
-      <div className="space-x-4 flex items-center gap-4">
+    <nav dir="rtl" className="bg-sky-950 text-white px-6 py-4 flex justify-between items-center">
+      <NavLink to='/' className="text-xl font-bold ">آموزش آمار توصیفی</NavLink>
+      <div className="space-x-4 flex items-center gap-4 text-sm md:text-base">
         <NavLink
           to="/history"
           className={({ isActive }) =>

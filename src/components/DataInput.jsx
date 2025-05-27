@@ -1,3 +1,4 @@
+import { Trash } from "iconsax-reactjs";
 import { useEffect, useState } from "react";
 
 const LOCAL_STORAGE_KEY = "userDataValues";
@@ -32,11 +33,11 @@ const DataInput = ({ onDataChange }) => {
   };
 
   return (
-    <div className="max-w-2xl mx-auto bg-white p-6 rounded-2xl shadow space-y-4">
+    <div className="max-w-2xl mx-auto bg-white p-6 rounded-2xl shadow-xl space-y-4">
       <h2 className="text-lg font-semibold text-center mb-4 text-sky-700">ورود داده‌های عددی</h2>
       <div className="flex flex-col gap-3">
         {values.map((value, index) => (
-          <div key={index} className="flex items-center gap-2">
+          <div key={index} className="flex items-center gap-2 relative">
             <input
               type="number"
               value={value}
@@ -45,15 +46,15 @@ const DataInput = ({ onDataChange }) => {
             />
             <button
               onClick={() => handleRemove(index)}
-              className="text-red-500 hover:text-red-700"
+              className="text-red-500 hover:text-red-900 absolute left-1"
             >
-              حذف
+              <Trash size="32" variant="Bold"/>
             </button>
           </div>
         ))}
         <button
           onClick={handleAdd}
-          className="w-full bg-sky-600 text-white py-2 rounded-md hover:bg-sky-700 transition"
+          className="w-full h-14 bg-gradient-to-l from-sky-500 to-sky-800 text-white py-2 rounded-md hover:bg-sky-700 transition"
         >
           افزودن مقدار
         </button>

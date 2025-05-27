@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Paykan", "system-ui"],
+        sans: ["Bidad", "system-ui"],
       }
       
     },

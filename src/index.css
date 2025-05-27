@@ -3,30 +3,25 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Paykan";
-  src: url("/public/fonts/woff/Paykan-Regular.woff") format("woff");
+  font-family: "Bidad";
+  src: url("/Bidad-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
-@font-face {
-  font-family: "Paykan";
-  src: url("/public/fonts/woff/Paykan-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
+@layer utilities {
+  input[type='number']::-webkit-outer-spin-button,
+  input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 
-@font-face {
-  font-family: "Paykan";
-  src: url("/public/fonts/woff/Paykan-Light.woff") format("woff");
-  font-weight: 200;
-  font-style: normal;
-}
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
 
-@font-face {
-  font-family: "Paykan";
-  src: url("/public/fonts/woff/Paykan-Black.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
+  * {
+    direction: rtl;
+    font-family: "Bidad", sans-serif;
+  }
 }
-

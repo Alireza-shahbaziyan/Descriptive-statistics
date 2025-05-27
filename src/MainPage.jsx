@@ -1,4 +1,4 @@
-// MainPage.jsx
+
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import DataInput from "./components/DataInput";
@@ -26,36 +26,23 @@ export default function MainPage() {
   }, [data]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-sky-50 to-sky-100 p-4 sm:p-8 font-sans space-y-10">
-      <motion.header
-        className="text-center"
-        initial={{ opacity: 0, y: -30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7 }}
-      >
+    <div className="min-h-screen bg-gradient-to-l from-sky-100 to-sky-200 p-4 sm:p-8 font-sans space-y-10">
+ 
         <h1 className="text-2xl sm:text-3xl font-extrabold text-sky-800">
           تحلیل آمار توصیفی
         </h1>
         <p className="text-gray-600 mt-2 text-sm sm:text-base">
           داده‌های عددی خود را وارد کنید تا جدول فراوانی، نمودار هیستوگرام و آمارهای توصیفی را مشاهده کنید.
         </p>
-      </motion.header>
 
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.1 }}
-      >
+
+      
         <DataInput onDataChange={setData} />
-      </motion.div>
 
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.3 }}
-      >
+
+ 
         <FrequencyTable table={freqTable} />
-      </motion.div>
+      
 
       <motion.div
         initial={{ opacity: 0, y: 30 }}
