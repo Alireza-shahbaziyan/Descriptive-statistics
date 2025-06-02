@@ -10,8 +10,8 @@ export default function Footer() {
           <img src={uni} alt="iau" className="md:w-36 px-2 w-28"/>
         </div>
 
-        <p className="text-sm text-gray-300">
-          © 2025 طراحی شده توسط علیرضا شهبازیان | استاد محمدرضا مهیاری نیا
+        <p className="text-sm text-yellow-200">
+          © 2025 طراحی شده توسط علیرضا شهبازیان | استاد دکتر محمدرضا مهیاری نیا
         </p>
       </div>
     </footer>

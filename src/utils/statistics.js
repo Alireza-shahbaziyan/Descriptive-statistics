@@ -1,31 +1,40 @@
 
 
 export function calculateFrequencies(data) {
-    const sorted = [...data].sort((a, b) => a - b);
-    const frequencyMap = {};
-  
-    sorted.forEach((val) => {
-      frequencyMap[val] = (frequencyMap[val] || 0) + 1;
-    });
-  
-    const uniqueValues = Object.keys(frequencyMap).map(Number);
-    const total = data.length;
-    let cumulativeFreq = 0;
-  
-    const table = uniqueValues.map((value) => {
-      const freq = frequencyMap[value];
-      cumulativeFreq += freq;
-      return {
-        value,
-        frequency: freq,
-        relativeFrequency: +(freq / total).toFixed(3),
-        cumulativeFrequency: cumulativeFreq,
-        cumulativeRelativeFrequency: +(cumulativeFreq / total).toFixed(3),
-      };
-    });
-  
-    return table;
-  }
+  const sorted = [...data].sort((a, b) => a - b);
+  const frequencyMap = {};
+
+  sorted.forEach((val) => {
+    frequencyMap[val] = (frequencyMap[val] || 0) + 1;
+  });
+
+  const uniqueValues = Object.keys(frequencyMap).map(Number);
+  const total = data.length;
+  let cumulativeFreq = 0;
+
+  const table = uniqueValues.map((value) => {
+    const freq = frequencyMap[value];
+    cumulativeFreq += freq;
+    const xi = value;
+    const xiSquared = xi ** 2;
+    const xiFi = xi * freq;
+    const fiXiSquared = freq * xiSquared;
+
+    return {
+      value: xi,
+      frequency: freq,
+      relativeFrequency: +(freq / total).toFixed(3),
+      cumulativeFrequency: cumulativeFreq,
+      cumulativeRelativeFrequency: +(cumulativeFreq / total).toFixed(3),
+      xiFi: +xiFi.toFixed(3),
+      xiSquared: +xiSquared.toFixed(3),
+      fiXiSquared: +fiXiSquared.toFixed(3),
+    };
+  });
+
+  return table;
+}
+
   
 
 export function calculateDescriptiveStats(data) {
